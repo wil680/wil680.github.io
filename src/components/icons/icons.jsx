@@ -1,5 +1,5 @@
 import { FaGithub, FaEnvelope, FaLinkedin, FaFile } from "react-icons/fa";
-import "./Icons.css";
+import "./icons.css";
 
 export default function Icons() {
   return (

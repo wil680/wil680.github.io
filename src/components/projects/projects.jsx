@@ -1,4 +1,4 @@
-import "./Projects.css";
+import "./projects.css";
 import { FaGithub, FaCode } from "react-icons/fa";
 import { FiLayers } from "react-icons/fi";
 
