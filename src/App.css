@@ -7,9 +7,26 @@
 .intro-page {
   min-height: 100vh;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.intro-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.intro-right {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-right .subsection {
+  width: fit-content;
+  min-height: auto;
+  align-items: flex-start;
 }
 
 header {
@@ -20,12 +37,6 @@ header {
   font-size: 12px;
   text-align: center;
   color: #c0c0c0;
-}
-
-.email-container {
-  display: flex;
-  justify-content: center;
-  padding: 2rem;
 }
 
 .icons {
@@ -45,23 +56,42 @@ footer {
 .body-and-picture {
   display: flex;
   align-items: center;
-  gap: 90px;
+  gap: 3rem;
+  width: 100%;
   max-width: 800px;
 }
 
+.body-and-picture .subsection-body {
+  flex: 1;
+}
+
 .image {
-  width: 260px;
-  max-width: 100%;
-  height: auto;
+  width: 280px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 25%;
   flex-shrink: 0;
   border-radius: 12px;
-  border: 2px solid;
-  transform: translateY(-14px);
+  border: 1px solid rgba(118, 162, 252, 0.4);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
 }
 
 @media (max-width: 768px) {
+  .intro-page {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-left {
+    min-height: 80vh;
+  }
+
   .body-and-picture {
     flex-direction: column; /* stack vertically */
-    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 320px;
   }
 }

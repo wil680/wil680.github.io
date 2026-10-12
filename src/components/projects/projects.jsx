@@ -25,13 +25,6 @@ export default function Projects() {
       technology: "C++",
       github: "https://github.com/wil680/poker-engine",
     },
-    {
-      name: "BudgetQuest",
-      description:
-        "an offline financial literacy mobile game using Expo SQLite and JavaScript, with persistent game state, dynamic UI components, and automated reports.",
-      technology: "React Native, Typescript, Expo, SQLite",
-      github: "https://github.com/wil680/budget-quest",
-    },
   ];
 
   return (

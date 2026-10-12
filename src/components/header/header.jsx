@@ -2,7 +2,7 @@ export default function Title() {
   return (
     <header>
       <h1 id="title">
-        hi, i'm <span className="highlight">william</span>
+        <span className="highlight">william pang</span>
       </h1>
     </header>
   );

@@ -10,7 +10,7 @@ export default function Icons() {
       <a href="mailto:wy4pang@uwaterloo.ca?subject=Hi" target="_blank">
         <FaEnvelope size={30} />
       </a>
-      <a href="https://www.linkedin.com/in/william-pang-2c3/" target="_blank">
+      <a href="https://www.linkedin.com/in/william-y-pang/" target="_blank">
         <FaLinkedin size={30} />
       </a>
       <a href="resume.pdf" target="_blank">

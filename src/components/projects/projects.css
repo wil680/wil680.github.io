@@ -1,6 +1,6 @@
 .project {
   border: 1px solid;
-  border-color: #8c82fc;
+  border-color: #76a2fc;
   width: 100%;
   border-radius: 16px;
   min-height: 380px;
@@ -16,7 +16,7 @@
 .project:hover {
   transform: translateY(-4px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  background-color: #343448;
+  background-color: #262b2d;
 }
 
 .project-content {

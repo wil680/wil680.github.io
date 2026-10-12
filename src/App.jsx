@@ -1,7 +1,6 @@
 import "./App.css";
 import Title from "./components/header/header";
 import Footer from "./components/footer";
-import Button from "./components/common/button";
 import Navbar from "./components/navbar/navbar";
 import Icons from "./components/icons/icons";
 import Description from "./components/header/description";
@@ -10,23 +9,20 @@ import Experience from "./components/experience/experience";
 import Projects from "./components/projects/projects";
 
 export default function App() {
-  function handleClick() {
-    window.location.href = "mailto:wy4pang@uwaterloo.ca?subject=Hi";
-  }
-
   return (
     <div className="page" id="page">
       <Navbar />
       <div className="intro-page">
-        <Title />
-        <Description />
-        <div className="email-container">
-          <Button onClick={handleClick}>Email me</Button>
+        <div className="intro-left">
+          <Title />
+          <Description />
+          <Icons />
         </div>
-        <Icons />
+        <div className="intro-right">
+          <Experience />
+        </div>
       </div>
       <About />
-      <Experience />
       <Projects />
       <Footer />
     </div>

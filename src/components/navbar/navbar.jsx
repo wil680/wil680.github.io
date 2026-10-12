@@ -12,7 +12,7 @@ export default function Navbar() {
 function Logo() {
   return (
     <a href="https://williampang.com">
-      <h1 id="logo"> William Pang</h1>
+      <h1 id="logo"> williampang.com</h1>
     </a>
   );
 }
