@@ -15,8 +15,8 @@ export default function About() {
               with a growing interest in software engineering.
             </p>
             <p>
-              I’m currently exploring full-stack development and interested in
-              machine learning. Outside of tech, I enjoy playing poker, binge
+              I’m currently working in full-stack development and interested in
+              machine learning. Outside of work, I enjoy playing poker, binge
               watching Netflix, and playing the piano.
             </p>
           </div>

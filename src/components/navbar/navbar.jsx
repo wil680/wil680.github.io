@@ -36,11 +36,6 @@ function Menu() {
         </a>
       </li>
       <li>
-        <a className="navbar-a" onClick={() => handleScroll("experience")}>
-          Experience
-        </a>
-      </li>
-      <li>
         <a className="navbar-a" onClick={() => handleScroll("projects")}>
           {" "}
           Projects
