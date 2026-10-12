@@ -1,4 +1,5 @@
 import "./navbar.css";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -11,35 +12,29 @@ export default function Navbar() {
 
 function Logo() {
   return (
-    <a href="https://williampang.com">
-      <h1 id="logo"> williampang.com</h1>
-    </a>
+    <Link to="/">
+      <h1 id="logo"> wil680.github.io</h1>
+    </Link>
   );
 }
 
 function Menu() {
-  function handleScroll(section) {
-    const element = document.getElementById(section);
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-
   return (
     <ul className="navbar-ul">
       <li>
-        <a className="navbar-a" onClick={() => handleScroll("page")}>
+        <NavLink className="navbar-a" to="/" end>
           Home
-        </a>
+        </NavLink>
       </li>
       <li>
-        <a className="navbar-a" onClick={() => handleScroll("about")}>
+        <NavLink className="navbar-a" to="/about">
           About me
-        </a>
+        </NavLink>
       </li>
       <li>
-        <a className="navbar-a" onClick={() => handleScroll("projects")}>
-          {" "}
+        <NavLink className="navbar-a" to="/projects">
           Projects
-        </a>
+        </NavLink>
       </li>
     </ul>
   );

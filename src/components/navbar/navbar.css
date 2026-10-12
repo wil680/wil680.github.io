@@ -27,11 +27,24 @@ a {
   padding: 8px 12px;
 }
 
-a:hover {
+a:hover,
+.navbar-a.active {
   color: #76a2fc;
 }
 
 #logo {
   font-size: 20px;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0;
+    padding: 6px 20px;
+  }
+
+  .navbar-ul {
+    gap: 8px;
+  }
 }

@@ -3,14 +3,15 @@
   border-color: #76a2fc;
   width: 100%;
   border-radius: 16px;
-  min-height: 380px;
+  min-height: 0;
 }
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  max-width: 800px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .project:hover {
@@ -20,12 +21,22 @@
 }
 
 .project-content {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .project-heading {
   display: flex;
   justify-content: space-between;
+}
+
+#projects .subsection-title {
+  max-width: 1000px;
+}
+
+@media (max-width: 900px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
