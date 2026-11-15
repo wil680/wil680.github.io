@@ -6,7 +6,7 @@ export default function Experience() {
       role: "Software Developer",
       company: "Tangam Systems",
       link: "https://www.tangamsystems.com/",
-      date: "September 2026 -  December 2026",
+      date: "September 2026 -  Present",
     },
     {
       role: "Software Developer",

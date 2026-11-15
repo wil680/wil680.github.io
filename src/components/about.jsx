@@ -1,5 +1,4 @@
-import Toronto from "../../toronto.png";
-import Waterloo from "../../waterloo.jpg";
+import Toronto from "../assets/toronto.png";
 
 export default function About() {
   return (
