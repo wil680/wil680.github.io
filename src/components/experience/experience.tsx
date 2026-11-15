@@ -1,7 +1,14 @@
 import "./experience.css";
 
+interface ExperienceItem {
+  role: string;
+  company: string;
+  link: string;
+  date: string;
+}
+
 export default function Experience() {
-  const experiences = [
+  const experiences: ExperienceItem[] = [
     {
       role: "Software Developer",
       company: "Tangam Systems",

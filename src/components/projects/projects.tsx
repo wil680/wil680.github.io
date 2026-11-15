@@ -1,9 +1,16 @@
 import "./projects.css";
-import { FaGithub, FaCode } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FiLayers } from "react-icons/fi";
 
+interface Project {
+  name: string;
+  description: string;
+  technology: string;
+  github: string;
+}
+
 export default function Projects() {
-  const projects = [
+  const projects: Project[] = [
     {
       name: "Coordinate",
       description:

@@ -1,7 +1,6 @@
 import "./App.css";
 import { useEffect } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 import Title from "./components/header/header";
 import Footer from "./components/footer";
